@@ -34,6 +34,10 @@
   padding: 50px;
 }
 
+.m-top50 {
+  margin-top: 50px;
+}
+
 /* #endregion */
 
 /* #region BODY */
@@ -54,16 +58,12 @@ h1 {
 
 /* #region MAIN */
 
-main ul {
-  margin-top: 50px;
-}
-
 main ul li {
   list-style: none;
   width: calc(100% / 3 - 10px);
 }
 
-main ul li i {
+main i {
   color: var(--primary-color);
 }
 

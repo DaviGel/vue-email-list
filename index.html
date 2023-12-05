@@ -24,11 +24,17 @@
           <h1>Email generate da Api Boolean</h1>
         </header>
         <main>
-          <ul class="d-flex">
+          <ul class="d-flex m-top50" v-if="emailAddress.length >= 10">
             <li v-for="(element, index) in emailAddress">
               <i class="fa-solid fa-envelope"></i> {{ element }}
             </li>
           </ul>
+          <div class="m-top50" v-else>
+            <p>
+              Caricamento in corso
+              <i class="fa-solid fa-spinner fa-spin"></i>
+            </p>
+          </div>
         </main>
       </div>
     </div>
