@@ -1,5 +1,86 @@
+/* #region VARIABLES */
+
+:root {
+  --primary-color: #0202ca;
+}
+
+/* #endregion */
+
+/* #region RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* #endregion */
+
+/* #region COMMON */
+
+[v-cloak] {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 50px;
+}
+
+/* #endregion */
+
+/* #region BODY */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* #endregion */
+
+/* #region HEADER */
+
+h1 {
+  color: var(--primary-color);
+}
+
+/* #endregion */
+
+/* #region MAIN */
+
+main ul {
+  margin-top: 50px;
+}
+
+main ul li {
+  list-style: none;
+  width: calc(100% / 3 - 10px);
+}
+
+main ul li i {
+  color: var(--primary-color);
+}
+
+/* #endregion */
+
+/* #region MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  main ul li {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main ul li {
+    width: calc(100%);
+  }
+}
+
+/* #endregion */
